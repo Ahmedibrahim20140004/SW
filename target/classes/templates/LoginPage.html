@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>LoginPage</title>
+</head>
+<body>
+
+
+    <form method="post" th:action="@{/LoginPage}" th:object="${Account}" >
+    email:
+    <input type="text" th:field="*{email}"/>
+    <br> </br>
+    password:
+    <input type="password" th:field="*{password}"/>
+    type:
+    <input type="text" th:field="*{type}"/>
+    <br> </br>
+    <input type ="submit" value="LOGIN"/>
+    </form>
+    <form action="/teacherPage">
+	<input type ="submit"  value="logged as teacher"/>
+	<br></br>
+	</form>
+	<form action="/StudentPage">
+	<input type ="submit"  value="logged  as student "/>
+	<br></br>
+	</form>
+    
+    
+    
+    
+</body>
+</html>

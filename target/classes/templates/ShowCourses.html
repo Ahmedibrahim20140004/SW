@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>ShowGame</title>
+</head>
+<body>
+
+
+    <form method="post" th:action="@{/ShowCourses}" th:object="${Course}" >
+    
+<table style="width:100%">
+  <tr th:each="courses:${courses}">
+    <th th:text="${courses.CourseName}"></th></tr>
+   </table>
+    <input type ="submit" value="Show Courses"/>
+    </form>
+      
+    <form action="/LoginPage">
+<input type ="submit"  value="login page"/>
+<br></br>
+</form>
+</body>
+</html>

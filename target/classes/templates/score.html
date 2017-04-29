@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Score</title>
+</head>
+<body>
+	<h1>YOUR SCORE</h1>
+      <th th:text="${score}"></th>
+        
+    <form action="/chose">
+<input type ="submit"  value="play again"/>
+<br></br>
+</form>
+  
+    <form action="/LoginPage">
+<input type ="submit"  value="login page"/>
+<br></br>
+</form>
+  </body>
+</html>
